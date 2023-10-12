@@ -14,9 +14,9 @@ Als weitere Herausforderung. Sollten auch ganze Sätze (mit Satzzeichen und Leer
 Die Ausgabe kann ein simple "Ja, ist ein Palindrom" oder "Nein, ist kein Palindrom" sein.-->
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/343269-Assassins-Creed-Valhalla-AC-Valhalla-Video-Game-Characters.jpg" Stretch="UniformToFill" TileMode="None"/>
+            <ImageBrush ImageSource="/03092022_nuraghies_06.jpg" Stretch="UniformToFill" TileMode="None"/>
         </Grid.Background>
-        <TextBox Name="Text" Width="300" Height="40" Margin="50,0,50,244" FontFamily="Copperplate Gothic Bold" FontSize="20" >
+        <TextBox Name="Text" Width="290" Height="40" Margin="50,0,50,144" FontFamily="Copperplate Gothic Bold" FontSize="20" >
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="1"/>
@@ -24,8 +24,8 @@ Die Ausgabe kann ein simple "Ja, ist ein Palindrom" oder "Nein, ist kein Palindr
                 </LinearGradientBrush>
             </TextBox.Background>
         </TextBox>
-        <Button Name="Pruefen" Content="PRÜFEN" FontSize="36" FontFamily="Showcard Gothic" Width="200" Height="60" Background="#FF948F8F" BorderBrush="Black" Foreground="Black" Margin="84,190,100,110" Click="Pruefen_Click"/>
-        <Label Name="Ergebnis" Content="" Margin="58,260,65,10" FontFamily="Old English Text MT" FontSize="24" Width="260" Height="40">
+        <Button Name="Pruefen" Content="PRÜFEN" FontSize="36" FontFamily="Showcard Gothic" Width="200" Height="50" Background="#FF948F8F" BorderBrush="Black" Foreground="Black" Margin="84,70,100,110" Click="Pruefen_Click"/>
+        <Label Name="Ergebnis" Content="" Margin="58,90,50,10" FontFamily="Old English Text MT" FontSize="24" Width="260" Height="40">
             <Label.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>

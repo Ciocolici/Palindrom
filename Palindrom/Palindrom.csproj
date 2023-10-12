@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="343269-Assassins-Creed-Valhalla-AC-Valhalla-Video-Game-Characters.jpg" />
+    <None Remove="03092022_nuraghies_06.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="343269-Assassins-Creed-Valhalla-AC-Valhalla-Video-Game-Characters.jpg" />
+    <Resource Include="03092022_nuraghies_06.jpg" />
   </ItemGroup>
 
 </Project>
