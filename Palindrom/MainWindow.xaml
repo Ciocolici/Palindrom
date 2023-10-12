@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Palindrom"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Palindrom" Height="400" Width="400">
+    <!-- Erstellen Sie eine WPF Anwendung die eingebene Texte darauf prüfen kann ob es sich um ein Palindrom handelt.
+Ein Palindrom ist ein Text, wenn er von Links und Rechts die selben Buchstaben hat. Also von links und rechts gleich gelesen werden kann.
+Als simple Aufgabe sollten erstmal nur einzelne Wörter (keine Satzzeichen, keine Leerzeichen) verarbeitet werden können.
+Als weitere Herausforderung. Sollten auch ganze Sätze (mit Satzzeichen und Leerzeichen) geprüft werden können.
 
+Die Ausgabe kann ein simple "Ja, ist ein Palindrom" oder "Nein, ist kein Palindrom" sein.-->
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/343269-Assassins-Creed-Valhalla-AC-Valhalla-Video-Game-Characters.jpg" Stretch="UniformToFill" TileMode="None"/>
+        </Grid.Background>
+        <TextBox Name="Text" Width="300" Height="40" Margin="50,0,50,244" FontFamily="Copperplate Gothic Bold" FontSize="20" >
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button Name="Pruefen" Content="PRÜFEN" FontSize="36" FontFamily="Showcard Gothic" Width="200" Height="60" Background="#FF948F8F" BorderBrush="Black" Foreground="Black" Margin="84,190,100,110" Click="Pruefen_Click"/>
+        <Label Name="Ergebnis" Content="" Margin="58,260,65,10" FontFamily="Old English Text MT" FontSize="24" Width="260" Height="40">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFE2B3B3" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
     </Grid>
 </Window>

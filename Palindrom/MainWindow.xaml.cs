@@ -24,5 +24,26 @@ namespace Palindrom
         {
             InitializeComponent();
         }
+
+        private void Pruefen_Click(object sender, RoutedEventArgs e)
+        {
+            string eingabeText = Text.Text;
+            string bereinigterText = new string(eingabeText.Where(char.IsLetter).ToArray());
+
+            if (Palindrom(bereinigterText))
+            {
+                Ergebnis.Content = "Ja, ist ein Palindrom";
+            }
+            else
+            {
+                Ergebnis.Content = "Nein, ist kein Palindrom";
+            }
+        }
+
+        private bool Palindrom(string text)
+        {
+            string umgedrehterText = new string(text.Reverse().ToArray());
+            return text.Equals(umgedrehterText, StringComparison.OrdinalIgnoreCase);
+        }
     }
 }
